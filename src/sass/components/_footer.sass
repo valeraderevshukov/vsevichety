@@ -1,0 +1,121 @@
+.footer
+	padding: 60px 0 95px 24px
+	+f(18px,400,1.4)
+	overflow: hidden
+	background-color: #e4eaed
+	+md
+		padding: 38px 0 60px
+		+f(20px,400,1)
+		background-color: #edf1f4
+	&__inner
+		position: relative
+		&:before
+			position: absolute
+			top: 0
+			right: 0
+			content: ''
+			top: -230px
+			right: -414px
+			width: 806px
+			height: 657px
+			opacity: .15
+			mix-blend-mode: multiply
+			background-size: contain
+			background-image: url('../img/proc.png')
+			background-repeat: no-repeat
+			background-position: 0 0
+			+md
+				display: none
+	&__wrap
+		position: relative
+		z-index: 1
+		margin: 0 -15px
+		flex-wrap: wrap
+		display: flex
+		+md
+			display: block
+	&__contacts,
+	&__deductions,
+	&__client,
+	&__extra
+		padding: 0 15px
+	&__contacts
+		+fs(27.8%)
+		+md
+			position: relative
+			+fs(100%)
+	&__nav
+		margin: 0 -10px
+		min-width: 100%
+		border-top: 1px solid #e7e7e7
+		.nav
+			padding: 0 25px
+			margin-bottom: -1px
+			a
+				padding-left: 50px
+	&__deductions
+		+fs(24.3%)
+	&__client
+		+fs(20.8%)
+	&__extra
+		+fs(27.1%)
+	&__logo
+		margin-bottom: 42px
+		width: 212px
+		display: block
+		img
+			display: block
+			max-width: 100%
+		+md
+			margin: 0 50px 30px 0
+	&__trigger
+		position: absolute
+		top: 9px
+		right: 13px
+		background-color: transparent
+		+rotate(90)
+		transition: transform .3s
+		[data-accordion-open].is-open &
+			+rotate(-90)
+		.icon
+			font-size: 13px
+	&__item
+		+md
+			padding-left: 50px
+		&:not(:last-child)
+			margin-bottom: 36px
+			+md
+				margin-bottom: 25px
+		p
+			&:not(:last-child)
+				margin-bottom: 15px
+	&__phone
+		+f(24px,400,1.4)
+		color: #b03000
+		border-bottom: 1px solid transparent
+		transition: border-color .3s
+		+hover
+			border-color: #b03000
+	&__title
+		margin-bottom: 42px
+		+f(24px,600,1.6)
+		+lg
+			line-height: 1.3
+	&__list
+		line-height: 1.3
+		li
+			&:not(:last-child)
+				margin-bottom: 21px
+		a
+			color: #333
+			transition: color .3s
+			+hover
+				color: #b03000
+
+.copy
+	+md
+		margin: 0 -10px
+		padding-top: 38px
+		border-top: 1px solid #e7e7e7
+		text-align: center
+		+f(24px,700,1.2)

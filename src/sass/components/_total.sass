@@ -1,0 +1,45 @@
+.total
+	+f(24px,300,1)
+	+lg
+		font-size: 20px
+	+sm
+		font-size: 24px
+		letter-spacing: -0.01em
+	&:not(:first-child)
+		margin-top: 50px
+	&__col
+		+sm
+			display: flex
+			justify-content: space-between
+		&:not(:last-child)
+			+sm
+				margin-bottom: 15px
+		&:not(:first-child)
+			+sm
+				.total__numb
+					font-size: 24px
+	&__title
+		min-height: 47px
+		+f(40px,300,1)
+		+lg
+			min-height: 40px
+		+sm
+			min-height: 0
+			padding-right: 10px
+	&__numb
+		margin-top: 20px
+		+f(40px,400,1)
+		color: #078b66
+		+sm
+			margin-top: 0
+			min-width: 100px
+			text-align: right
+	&__description
+		margin-top: 28px
+		+sm
+			margin-top: 15px
+	&__text
+		+sm
+			padding-right: 10px
+			br
+				display: none

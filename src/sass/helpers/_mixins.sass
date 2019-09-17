@@ -281,7 +281,7 @@
     
 =fs($val)
   flex: 0 0 $val
-  min-width: $val
+  max-width: $val
   
 =fadeout($tr)
   opacity: 0
@@ -297,7 +297,7 @@
   width: $size + px
   border-radius: 50%
 
-=generate_grid($columns: 12, $sizeXs: false, $sizeSm: false, $sizeMd: false, $sizeLg: false, $padding: 15px)
+=generate_grid($columns: 12, $sizeXs: true, $sizeSm: true, $sizeMd: true, $sizeLg: true, $padding: 15px)
   .row
     margin: 0px -#{$padding}
     display: flex

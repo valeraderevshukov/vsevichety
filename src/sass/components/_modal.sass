@@ -1,0 +1,30 @@
+[data-modal]
+    position: fixed
+    z-index: -1
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    opacity: 0
+    visibility: hidden
+    background-color: rgba(#000,.8)
+    user-select: none
+    padding: 15px
+    +vertical
+    +gpu
+    overflow: auto
+    transition: opacity 0.3s, visibility 0.3s, z-index 0.3s
+    &.is-open
+        opacity: 1
+        visibility: visible
+        z-index: 100
+        
+[data-modal-container]
+    position: relative
+    z-index: 1
+    font-size: 18px
+    text-align: left
+    vertical-align: middle
+    display: inline-block
+    max-width: 385px
+    width: 99.9%

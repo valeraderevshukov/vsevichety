@@ -1,0 +1,767 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Price</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header">
+        <div class="header__top">
+          <div class="header__inner inner">
+            <a href="/" class="header__logo logo logo_mod">
+              <span class="logo__proc">
+                <img src="./img/logo-proc.png" alt="img">
+              </span>
+              <span class="logo__text">
+                <img src="./img/logo-text.png" alt="img">
+              </span>
+              <h1 class="logo__seo-text">Всевычеты.ру</h1>
+            </a>
+            <button class="btn-menu js-btn-menu" type="button">
+              <span class="btn-menu__line"></span>
+              <span class="btn-menu__line"></span>
+              <span class="btn-menu__line"></span>
+            </button>
+            <div class="header__time">
+              <p>заполняем декларацию 3-НДФЛ</p>
+              <p>8:00 – 20:00 без выходных</p>
+            </div>
+            <div class="header__consult">
+              <p>бесплатная консультация</p>
+              <p><a href="tel:8 (916) 747-17-30">8 (916) 747-17-30</a></p>
+            </div>
+            <div class="header__btn md-hide">
+              <a href="#" class="btn btn_sm" data-modal-control="ordermodal">заказать</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__inner inner js-header-bottom">
+            <div class="header__mob-topic md-show">
+              <div class="orderinf">
+                <div class="orderinf__text"> Заполнение <br>декларации 3-НДФЛ </div>
+                <div class="orderinf__btns">
+                  <a href="#" class="btn btn_middle" data-modal-control="ordermodal">заказать</a>
+                </div>
+              </div>
+              <form class="search search_full">
+                <div class="search__input"><input type="text" placeholder="Поиск"></div>
+                <button class="search__btn" type="submit">
+                  <svg class="icon icon-search ">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item is-active">
+                  <a href="#">Налоговые вычеты</a>
+                  <div class="accordeons md-show" data-accordion-group>
+                    <!-- begin accordeon -->
+                    <div class="accordeon" data-accordion-item>
+                      <div class="accordeon__trigger" data-accordion-trigger>Имущественный вычет <svg class="icon icon-arr-right ">
+                          <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                        </svg>
+                      </div>
+                      <div class="accordeon__container" data-accordion-container>
+                        <ul class="navlist">
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end accordeon -->
+                    <!-- begin accordeon -->
+                    <div class="accordeon" data-accordion-item data-accordion-open>
+                      <div class="accordeon__trigger" data-accordion-trigger>Вычет на лечение <svg class="icon icon-arr-right ">
+                          <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                        </svg>
+                      </div>
+                      <div class="accordeon__container" data-accordion-container>
+                        <ul class="navlist">
+                          <li class="is-active"><a href="#">Лечение родственников</a></li>
+                          <li><a href="#">Дорогостоящее лечение</a></li>
+                          <li><a href="#">Покупка медицинских материалов</a></li>
+                          <li><a href="#">Список документов</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end accordeon -->
+                    <!-- begin accordeon -->
+                    <div class="accordeon" data-accordion-item>
+                      <div class="accordeon__trigger" data-accordion-trigger>Вычет на обучение <svg class="icon icon-arr-right ">
+                          <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                        </svg>
+                      </div>
+                      <div class="accordeon__container" data-accordion-container>
+                        <ul class="navlist">
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end accordeon -->
+                    <!-- begin accordeon -->
+                    <div class="accordeon" data-accordion-item>
+                      <div class="accordeon__trigger" data-accordion-trigger>Декларация при продаже автомобиля <svg class="icon icon-arr-right ">
+                          <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                        </svg>
+                      </div>
+                      <div class="accordeon__container" data-accordion-container>
+                        <ul class="navlist">
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end accordeon -->
+                    <!-- begin accordeon -->
+                    <div class="accordeon" data-accordion-item>
+                      <div class="accordeon__trigger" data-accordion-trigger>Декларация при продаже недвижимости <svg class="icon icon-arr-right ">
+                          <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                        </svg>
+                      </div>
+                      <div class="accordeon__container" data-accordion-container>
+                        <ul class="navlist">
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end accordeon -->
+                    <!-- begin accordeon -->
+                    <div class="accordeon" data-accordion-item>
+                      <div class="accordeon__trigger" data-accordion-trigger>Иные доходы <svg class="icon icon-arr-right ">
+                          <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                        </svg>
+                      </div>
+                      <div class="accordeon__container" data-accordion-container>
+                        <ul class="navlist">
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                          <li><a href="#">Link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end accordeon -->
+                  </div>
+                </li>
+                <li class="nav__item"><a href="#">Услуги</a></li>
+                <li class="nav__item"><a href="#">Отзывы</a></li>
+                <li class="nav__item"><a href="#">Документы</a></li>
+                <li class="nav__item"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__search md-hide">
+              <form class="search">
+                <div class="search__input"><input type="text" placeholder="Поиск"></div>
+                <button class="search__btn" type="submit">
+                  <svg class="icon icon-search ">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="header__links md-show">
+              <a href="#" class="linkitem">
+                <span class="linkitem__icon">
+                  <svg class="icon icon-calculator ">
+                    <use xlink:href="img/sprite.svg#icon-calculator"></use>
+                  </svg>
+                </span>
+                <span class="linkitem__title">Калькулятор <br>налогового вычета</span>
+              </a>
+              <a href="#" class="linkitem">
+                <span class="linkitem__icon">
+                  <svg class="icon icon-message ">
+                    <use xlink:href="img/sprite.svg#icon-message"></use>
+                  </svg>
+                </span>
+                <span class="linkitem__title">Ответы на вопросы, <br>напишите нам здесь</span>
+              </a>
+              <ul class="sidebar__soc soc">
+                <li><a href="#">
+                    <svg class="icon icon-vk ">
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a></li>
+                <li><a href="#">
+                    <svg class="icon icon-instagram ">
+                      <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a></li>
+                <li><a href="#">
+                    <svg class="icon icon-facebook ">
+                      <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="breadcrumbs-wrap">
+        <div class="breadcrumbs-inner inner">
+          <!-- begin breadcrumbs -->
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="#">Главная</a>
+              <svg class="icon icon-arr-right ">
+                <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumbs__item">
+              <span>Калькулятор вычетов</span>
+            </li>
+          </ul>
+          <!-- end breadcrumbs -->
+        </div>
+      </div>
+      <div class="inner">
+        <div class="wrap">
+          <!-- begin sidebar -->
+          <aside class="sidebar md-hide">
+            <div class="sidebar__item" data-accordion-group>
+              <!-- begin accordeon -->
+              <div class="accordeon" data-accordion-item>
+                <div class="accordeon__trigger" data-accordion-trigger>Имущественный вычет <svg class="icon icon-arr-right ">
+                    <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                  </svg>
+                </div>
+                <div class="accordeon__container" data-accordion-container>
+                  <ul class="navlist">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end accordeon -->
+              <!-- begin accordeon -->
+              <div class="accordeon" data-accordion-item data-accordion-open>
+                <div class="accordeon__trigger" data-accordion-trigger>Вычет на лечение <svg class="icon icon-arr-right ">
+                    <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                  </svg>
+                </div>
+                <div class="accordeon__container" data-accordion-container>
+                  <ul class="navlist">
+                    <li class="is-active"><a href="#">Лечение родственников</a></li>
+                    <li><a href="#">Дорогостоящее лечение</a></li>
+                    <li><a href="#">Покупка медицинских материалов</a></li>
+                    <li><a href="#">Список документов</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end accordeon -->
+              <!-- begin accordeon -->
+              <div class="accordeon" data-accordion-item>
+                <div class="accordeon__trigger" data-accordion-trigger>Вычет на обучение <svg class="icon icon-arr-right ">
+                    <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                  </svg>
+                </div>
+                <div class="accordeon__container" data-accordion-container>
+                  <ul class="navlist">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end accordeon -->
+              <!-- begin accordeon -->
+              <div class="accordeon" data-accordion-item>
+                <div class="accordeon__trigger" data-accordion-trigger>Декларация при продаже автомобиля <svg class="icon icon-arr-right ">
+                    <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                  </svg>
+                </div>
+                <div class="accordeon__container" data-accordion-container>
+                  <ul class="navlist">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end accordeon -->
+              <!-- begin accordeon -->
+              <div class="accordeon" data-accordion-item>
+                <div class="accordeon__trigger" data-accordion-trigger>Декларация при продаже недвижимости <svg class="icon icon-arr-right ">
+                    <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                  </svg>
+                </div>
+                <div class="accordeon__container" data-accordion-container>
+                  <ul class="navlist">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end accordeon -->
+              <!-- begin accordeon -->
+              <div class="accordeon" data-accordion-item>
+                <div class="accordeon__trigger" data-accordion-trigger>Иные доходы <svg class="icon icon-arr-right ">
+                    <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                  </svg>
+                </div>
+                <div class="accordeon__container" data-accordion-container>
+                  <ul class="navlist">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end accordeon -->
+            </div>
+            <div class="sidebar__item">
+              <div class="sidebar__item-wrap">
+                <a href="#" class="linkitem">
+                  <span class="linkitem__icon">
+                    <svg class="icon icon-calculator ">
+                      <use xlink:href="img/sprite.svg#icon-calculator"></use>
+                    </svg>
+                  </span>
+                  <span class="linkitem__title">Калькулятор <br>налогового вычета</span>
+                </a>
+                <a href="#" class="linkitem">
+                  <span class="linkitem__icon">
+                    <svg class="icon icon-message ">
+                      <use xlink:href="img/sprite.svg#icon-message"></use>
+                    </svg>
+                  </span>
+                  <span class="linkitem__title">Ответы на вопросы, напишите нам здесь</span>
+                </a>
+                <ul class="sidebar__soc soc">
+                  <li><a href="#">
+                      <svg class="icon icon-vk ">
+                        <use xlink:href="img/sprite.svg#icon-vk"></use>
+                      </svg>
+                    </a></li>
+                  <li><a href="#">
+                      <svg class="icon icon-instagram ">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a></li>
+                  <li><a href="#">
+                      <svg class="icon icon-facebook ">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <div class="advantages">
+                <div class="advantages__title">Преимущества</div>
+                <div class="advantages__description">оформления декларации у нас</div>
+                <ul class="advantages__list">
+                  <li class="advantages__item">
+                    <div class="advantages__icon"><img src="./img/aboutlisticon-1.png" alt="img"></div>
+                    <div class="advantages__title-sm">Оформление от 1 часа</div>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__icon"><img src="./img/aboutlisticon-2.png" alt="img"></div>
+                    <div class="advantages__title-sm">Минимум документов</div>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__icon"><img src="./img/aboutlisticon-3.png" alt="img"></div>
+                    <div class="advantages__title-sm">Гарантия 100% сдачи</div>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__icon"><img src="./img/aboutlisticon-4.png" alt="img"></div>
+                    <div class="advantages__title-sm">Работаем с 2013 года</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <form action="#" class="form form_bord-none form_full">
+                <div class="form__title">Заказать оформление декларации 3-НДФЛ</div>
+                <div class="form__wrap">
+                  <div class="form-group">
+                    <div class="form-field">
+                      <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__text">Имущественный вычет</span>
+                      </label>
+                    </div>
+                    <div class="form-field">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox__text">Продажа авто / недвижимости</span>
+                      </label>
+                    </div>
+                    <div class="form-field">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox__text">Вычет на лечение</span>
+                      </label>
+                    </div>
+                    <div class="form-field">
+                      <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__text">Вычет на обучение</span>
+                      </label>
+                    </div>
+                    <div class="form-field">
+                      <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__text">Декларирование иных доходов</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input"><input type="text" placeholder="* Ваш email"></div>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn_red btn_red-shad btn_full" type="submit">Отправить заявку</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </aside>
+          <!-- end sidebar -->
+          <!-- begin main -->
+          <main class="main">
+            <div class="main__wrap">
+              <article class="article">
+                <h2>Стоимость услуг</h2>
+                <p>Актуально от 1 января 2018 г.</p>
+                <div class="prices">
+                  <div class="price">
+                    <div class="price__head">
+                      <div class="price__title">Предварительная консультация</div>
+                      <div class="price__numb">бесплатно</div>
+                    </div>
+                    <div class="price__wrap">Анализ документов на наличие права на вычет, индивидуальный список документов в зависимости от Вашей ситуации</div>
+                  </div>
+                  <div class="price">
+                    <div class="price__head">
+                      <div class="price__title">Имущественный вычет</div>
+                      <div class="price__numb">1000 ₽</div>
+                    </div>
+                    <div class="price__wrap">Анализ Ваших документов, заполнение декларации 3-НДФЛ за 1 год, бесплатная консультация специалиста.</div>
+                  </div>
+                  <div class="price">
+                    <div class="price__head">
+                      <div class="price__title">Продажа имущества</div>
+                      <div class="price__numb">900 ₽</div>
+                    </div>
+                    <div class="price__wrap">Заполнение декларации 3-НДФЛ при продаже недвижимости/автомобилей за 1 год, бесплатная консультация специалиста.</div>
+                  </div>
+                  <div class="price">
+                    <div class="price__head">
+                      <div class="price__title">Вычет на лечение</div>
+                      <div class="price__numb">600 ₽</div>
+                    </div>
+                    <div class="price__wrap">Анализ Ваших документов, заполнение декларации 3-НДФЛ за 1 год, бесплатная консультация специалиста.</div>
+                  </div>
+                  <div class="price">
+                    <div class="price__head">
+                      <div class="price__title">Вычет на обучение</div>
+                      <div class="price__numb">600 ₽</div>
+                    </div>
+                    <div class="price__wrap">Анализ Ваших документов, заполнение декларации 3-НДФЛ за 1 год, бесплатная консультация специалиста.</div>
+                  </div>
+                  <div class="price">
+                    <div class="price__head">
+                      <div class="price__title">Дополнительный источник дохода</div>
+                      <div class="price__numb">250 ₽</div>
+                    </div>
+                    <div class="price__wrap">Если в течение 1 года было несколько &lt;br&gt;работодателей.</div>
+                  </div>
+                  <div class="price">
+                    <div class="price__head">
+                      <div class="price__title">Заявление</div>
+                      <div class="price__numb">50 ₽</div>
+                    </div>
+                    <div class="price__wrap">Заявление о возврате НДФЛ (о получении вычета).</div>
+                  </div>
+                  <div class="price">
+                    <div class="price__head">
+                      <div class="price__title">Скидки на заявления</div>
+                      <div class="price__numb">100 ₽</div>
+                    </div>
+                    <div class="price__wrap">При единовременном заказе нескольких деклараций предоставляется скидка на 2 и 3 декларацию.</div>
+                  </div>
+                </div>
+                <h2>Способы оплаты</h2>
+                <div class="payments">
+                  <div class="payment">
+                    <div class="payment__icon">
+                      <img src="./img/pay-1.png" alt="icon">
+                    </div>
+                    <div class="payment__wrap">
+                      <div class="payment__title">Банковский перевод</div>
+                      <p>Срок и комиссию за перевод можете уточнить в выбранном Вами банке, обычно от моментальной оплаты до 2-х суток.</p>
+                    </div>
+                  </div>
+                  <div class="payment">
+                    <div class="payment__icon">
+                      <img src="./img/pay-2.png" alt="icon">
+                    </div>
+                    <div class="payment__wrap">
+                      <div class="payment__title">Терминалы оплаты</div>
+                      <p>Находятся во всех торговых магазинах, салонах сотовой связи. Срок пополнения - моментально.</p>
+                    </div>
+                  </div>
+                  <div class="payment">
+                    <div class="payment__icon">
+                      <img src="./img/pay-3.png" alt="icon">
+                    </div>
+                    <div class="payment__wrap">
+                      <div class="payment__title">Салоны сотовой связи</div>
+                      <p>Срок пополнения - моментально.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="advantages advantages_mob">
+                  <div class="advantages__title">Преимущества</div>
+                  <div class="advantages__description">оформления декларации у нас</div>
+                  <ul class="advantages__list">
+                    <li class="advantages__item">
+                      <div class="advantages__icon"><img src="./img/aboutlisticon-1.png" alt="img"></div>
+                      <div class="advantages__title-sm">Оформление от 1 часа</div>
+                    </li>
+                    <li class="advantages__item">
+                      <div class="advantages__icon"><img src="./img/aboutlisticon-2.png" alt="img"></div>
+                      <div class="advantages__title-sm">Минимум документов</div>
+                    </li>
+                    <li class="advantages__item">
+                      <div class="advantages__icon"><img src="./img/aboutlisticon-3.png" alt="img"></div>
+                      <div class="advantages__title-sm">Гарантия 100% сдачи</div>
+                    </li>
+                    <li class="advantages__item">
+                      <div class="advantages__icon"><img src="./img/aboutlisticon-4.png" alt="img"></div>
+                      <div class="advantages__title-sm">Работаем с 2013 года</div>
+                    </li>
+                  </ul>
+                </div>
+                <form action="#" class="form form_mob form_full">
+                  <div class="form__title">Заказать оформление <br>декларации 3-НДФЛ</div>
+                  <div class="form__wrap">
+                    <div class="form-group">
+                      <div class="form-field">
+                        <label class="checkbox">
+                          <input type="checkbox" checked>
+                          <span class="checkbox__text">Имущественный вычет</span>
+                        </label>
+                      </div>
+                      <div class="form-field">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__text">Продажа авто / недвижимости</span>
+                        </label>
+                      </div>
+                      <div class="form-field">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__text">Вычет на лечение</span>
+                        </label>
+                      </div>
+                      <div class="form-field">
+                        <label class="checkbox">
+                          <input type="checkbox" checked>
+                          <span class="checkbox__text">Вычет на обучение</span>
+                        </label>
+                      </div>
+                      <div class="form-field">
+                        <label class="checkbox">
+                          <input type="checkbox" checked>
+                          <span class="checkbox__text">Декларирование иных доходов</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input"><input type="text" placeholder="* Ваш email"></div>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn_red btn_red-shad btn_full" type="submit">Отправить заявку</button>
+                    </div>
+                  </div>
+                </form>
+                <h2>Политика конфиденциальности</h2>
+                <p>Все персональные данные хранятся зашифрованными и удаляются через 1 месяц после оформления декларации 3-НДФЛ. Мы не передаем информацию третьим лицам. По Вашему желанию, сохраняем данные для оформления на следующий год.</p>
+              </article>
+            </div>
+          </main>
+          <!-- end main -->
+        </div>
+      </div>
+      <!-- begin footer -->
+      <footer class="footer" data-accordion-group>
+        <div class="footer__inner inner">
+          <div class="footer__wrap" data-accordion-item data-accordion-open>
+            <div class="footer__contacts">
+              <a href="/" class="footer__logo">
+                <img src="./img/logo-footer.png" alt="logo">
+              </a>
+              <div class="footer__item">
+                <p>заполняем декларацию 3-НДФЛ</p>
+                <p>8:00 - 21:00 без выходных</p>
+                <p>бесплатная консультация</p>
+              </div>
+              <div class="footer__item">
+                <a href="tel:8 (916) 747-17-30" class="footer__phone">8 (916) 747-17-30</a>
+              </div>
+              <button class="footer__trigger md-show" data-accordion-trigger type="button">
+                <svg class="icon icon-arr-right ">
+                  <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                </svg>
+              </button>
+              <div class="footer__item md-hide">
+                <ul class="soc">
+                  <li><a href="#">
+                      <svg class="icon icon-vk ">
+                        <use xlink:href="img/sprite.svg#icon-vk"></use>
+                      </svg>
+                    </a></li>
+                  <li><a href="#">
+                      <svg class="icon icon-instagram ">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a></li>
+                  <li><a href="#">
+                      <svg class="icon icon-facebook ">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a></li>
+                </ul>
+              </div>
+              <div class="footer__item md-hide">
+                <div class="copy">&copy; 2013 – 2019</div>
+              </div>
+            </div>
+            <div class="md-show">
+              <div class="footer__nav" data-accordion-container>
+                <div class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a href="#">Налоговые вычеты</a></li>
+                    <li class="nav__item"><a href="#">Услуги</a></li>
+                    <li class="nav__item"><a href="#">Отзывы</a></li>
+                    <li class="nav__item"><a href="#">Документы</a></li>
+                    <li class="nav__item"><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="copy md-show">&copy; 2013 – 2019</div>
+            <div class="footer__deductions md-hide">
+              <div class="footer__title">Налоговые вычеты</div>
+              <ul class="footer__list">
+                <li><a href="#">Имущественный вычет</a></li>
+                <li><a href="#">Вычет на лечение</a></li>
+                <li><a href="#">Вычет на обучение</a></li>
+                <li><a href="#">Декларация при продаже автомобиля</a></li>
+                <li><a href="#">Декларация при продаже недвижимости</a></li>
+                <li><a href="#">Декларирование иных доходов</a></li>
+              </ul>
+            </div>
+            <div class="footer__client md-hide">
+              <div class="footer__title">Клиентам</div>
+              <ul class="footer__list">
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Документы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Ответы на вопросы</a></li>
+                <li><a href="#">Калькулятор вычетов</a></li>
+              </ul>
+            </div>
+            <div class="footer__extra md-hide">
+              <div class="footer__title">Дополнительно</div>
+              <ul class="footer__list">
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Что такое декларация 3-НДФЛ?</a></li>
+                <li><a href="#">Задать вопрос</a></li>
+                <li><a href="#">Карта сайта</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+      <div class="modal" data-modal="ordermodal">
+        <div class="modal__container" data-modal-container>
+          <div class="modal__inner">
+            <form action="#" class="form">
+              <div class="form__title">Заказать оформление декларации 3-НДФЛ</div>
+              <div class="form__wrap">
+                <div class="form-group">
+                  <div class="form-field">
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="checkbox__text">Имущественный вычет</span>
+                    </label>
+                  </div>
+                  <div class="form-field">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__text">Продажа авто / недвижимости</span>
+                    </label>
+                  </div>
+                  <div class="form-field">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__text">Вычет на лечение</span>
+                    </label>
+                  </div>
+                  <div class="form-field">
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="checkbox__text">Вычет на обучение</span>
+                    </label>
+                  </div>
+                  <div class="form-field">
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="checkbox__text">Декларирование иных доходов</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input"><input type="text" placeholder="* Ваш email"></div>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn_red btn_red-shad btn_full" type="submit">Отправить заявку</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

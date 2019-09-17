@@ -1,0 +1,54 @@
+.advantages
+	padding: 30px 30px 30px 46px
+	background-image: url('../img/advantagesbg.png')
+	background-repeat: no-repeat
+	background-size: cover
+	+lg
+		padding: 30px
+	&_mob
+		display: none !important
+		+sm
+			margin: 30px -25px 0
+			text-align: center
+			border-top: 1px solid #f4efe6
+			border-bottom: 1px solid #f4efe6
+			display: block !important
+	&__title
+		margin-bottom: 5px
+		text-transform: uppercase
+		color: #b64624
+		+f(36px,700,1) 
+		text-transform: uppercase
+		+lg
+			font-size: 30px
+	&__description
+		margin-bottom: 40px
+		+f(30px,400,1.1)
+		+lg
+			font-size: 28px
+	&__list
+		margin-bottom: -24px
+		flex-wrap: wrap
+		justify-content: space-between
+		display: flex
+	&__item
+		margin-bottom: 24px
+		width: 100%
+		max-width: 110px
+		+sm
+			max-width: 190px
+			align-items: center
+			display: flex
+			text-align: left
+	&__icon
+		margin-bottom: 8px
+		+sm
+			font-style: 0
+			margin-right: 15px
+		img
+			max-height: 54px
+			display: block
+	&__title-sm
+		+f(18px,400,1.1)
+		+lg
+			font-size: 16px

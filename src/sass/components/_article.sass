@@ -1,0 +1,86 @@
+.article,
+article
+	+prevent-text
+	h1
+		&:not(:last-child)
+			margin-bottom: 50px
+		&:not(:first-child)
+			margin-top: 50px
+	h2
+		position: relative
+		+f(48px,600,1.2)
+		+lg
+			font-size: 42px
+		+sm
+			font-size: 48px
+			letter-spacing: 0.03em
+		&:not(:last-child)
+			margin-bottom: 45px
+			+lg
+				margin-bottom: 30px
+			+sm
+				margin-bottom: 43px
+		&:not(:first-child)
+			margin-top: 45px
+			+lg
+				margin-top: 30px
+			+sm
+				margin-top: 43px
+		&:before
+			position: absolute
+			content: ''
+			left: 0
+			top: 52px
+			height: 4px
+			width: 31px
+			background-color: #078b66
+			+lg
+				top: 50px
+			+sm
+				top: 52px
+	h3
+		&:not(:last-child)
+			margin-bottom: 35px
+		&:not(:first-child)
+			margin-top: 35px
+	h4
+		&:not(:last-child)
+			margin-bottom: 25px
+		&:not(:first-child)
+			margin-top: 25px
+	h5
+		&:not(:last-child)
+			margin-bottom: 25px
+		&:not(:first-child)
+			margin-top: 25px
+	.title
+		&:not(:last-child)
+			margin-bottom: 45px
+		&:not(:first-child)
+			margin-top: 45px
+	p
+		letter-spacing: -0.015em
+		&:not(:last-child)
+			margin-bottom: 27px
+			+sm
+				margin-bottom: 28px
+	a:not([class])
+		color: #b03000
+		border-bottom: 1px solid
+		transition: border-color .3s
+		+hover
+			border-color: transparent
+	&__share
+		flex-wrap: wrap
+		align-items: center
+		display: flex
+		.btn
+			margin-right: 30px
+			+sm
+				margin-right: 15px
+	&__share-soc
+		font-size: 0
+		img
+			display: block
+			+sm
+				max-width: 205px

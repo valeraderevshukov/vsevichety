@@ -1,23 +1,28 @@
-{% macro icon(i) %}
-<svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
+{% macro icon(i, class) %}
+<svg class="icon icon-{{i}} {{ class }}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
 
 {% macro breadcrumbs(props) %}
-<!-- begin breadcrumbs -->
-<ul class="breadcrumbs{% if props.class %}{{ props.class }}{% endif %}">
-	{% for item in props.list %}
-		{% if loop.last %}
-		<li class="breadcrumbs__item">
-			<span>{{ item }}</span>
-		</li>
-		{% else %}
-		<li class="breadcrumbs__item">
-			<a href="#">{{ item }}</a>
-		</li>
-		{% endif %}
-	{% endfor %}
-</ul>
-<!-- end breadcrumbs -->
+<div class="breadcrumbs-wrap">
+	<div class="breadcrumbs-inner inner">
+		<!-- begin breadcrumbs -->
+		<ul class="breadcrumbs{% if props.class %}{{ props.class }}{% endif %}">
+			{% for item in props.list %}
+				{% if loop.last %}
+				<li class="breadcrumbs__item">
+					<span>{{ item }}</span>
+				</li>
+				{% else %}
+				<li class="breadcrumbs__item">
+					<a href="#">{{ item }}</a>
+					{{ icon('arr-right') }}
+				</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+		<!-- end breadcrumbs -->	
+	</div>
+</div>
 {% endmacro %}
 
 {% macro checkbox(props) %}
@@ -27,4 +32,15 @@
 	<span class="{% if props.radio %}radio{% else %}checkbox{% endif %}__text">{{ props.text or 'checkbox' }}</span>
 </label>
 <!-- end input -->
+{% endmacro %}
+
+{% macro info(props) %}
+<span class="info js-info">
+	{{ icon('info', 'js-info-trigger') }}
+	<span class="info__drop">
+		<button class="info__close js-info-close" type="button">{{ icon('close') }}</button>
+		<p>Подсказка, информация.</p>
+		<p>Многострочная.</p>
+	</span>
+</span>
 {% endmacro %}

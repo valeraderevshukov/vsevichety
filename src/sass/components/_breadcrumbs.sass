@@ -1,0 +1,28 @@
+.breadcrumbs-wrap
+	padding: 20px 0 20px 20px
+	border-bottom: 1px solid rgb(240, 245, 246)
+	background-color: rgb(248, 250, 251)
+	+md
+		display: none
+.breadcrumbs
+	+f(18px,600,1.38)
+	flex-wrap: wrap
+	display: flex
+	+lg
+		font-size: 16px
+	&__item
+		position: relative
+		&:not(:last-child)
+			padding-right: 37px
+		.icon
+			position: absolute
+			top: 7px
+			right: 13px
+			font-size: 12px
+			+lg
+				font-size: 10px
+	a
+		color: #333
+		transition: color .6s
+		+hover
+			color: #ce3c06

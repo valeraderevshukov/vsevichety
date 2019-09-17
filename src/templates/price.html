@@ -1,0 +1,351 @@
+---
+title: Price
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	{{ mixins.breadcrumbs({
+		list: ['Главная', 'Калькулятор вычетов']
+	}) }}
+	<div class="inner">
+		<div class="wrap">
+			<!-- begin sidebar -->
+			<aside class="sidebar md-hide">
+				<div class="sidebar__item" data-accordion-group>
+					<!-- begin accordeon -->
+					<div class="accordeon" data-accordion-item>
+						<div class="accordeon__trigger" data-accordion-trigger>Имущественный вычет{{ mixins.icon('arr-right') }}</div>
+						<div class="accordeon__container" data-accordion-container>
+							<ul class="navlist">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end accordeon -->
+					<!-- begin accordeon -->
+					<div class="accordeon" data-accordion-item data-accordion-open>
+						<div class="accordeon__trigger" data-accordion-trigger>Вычет на лечение{{ mixins.icon('arr-right') }}</div>
+						<div class="accordeon__container" data-accordion-container>
+							<ul class="navlist">
+								<li class="is-active"><a href="#">Лечение родственников</a></li>
+								<li><a href="#">Дорогостоящее лечение</a></li>
+								<li><a href="#">Покупка медицинских материалов</a></li>
+								<li><a href="#">Список документов</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end accordeon -->
+					<!-- begin accordeon -->
+					<div class="accordeon" data-accordion-item>
+						<div class="accordeon__trigger" data-accordion-trigger>Вычет на обучение{{ mixins.icon('arr-right') }}</div>
+						<div class="accordeon__container" data-accordion-container>
+							<ul class="navlist">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end accordeon -->
+					<!-- begin accordeon -->
+					<div class="accordeon" data-accordion-item>
+						<div class="accordeon__trigger" data-accordion-trigger>Декларация при продаже автомобиля{{ mixins.icon('arr-right') }}</div>
+						<div class="accordeon__container" data-accordion-container>
+							<ul class="navlist">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end accordeon -->
+					<!-- begin accordeon -->
+					<div class="accordeon" data-accordion-item>
+						<div class="accordeon__trigger" data-accordion-trigger>Декларация при продаже недвижимости{{ mixins.icon('arr-right') }}</div>
+						<div class="accordeon__container" data-accordion-container>
+							<ul class="navlist">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end accordeon -->
+					<!-- begin accordeon -->
+					<div class="accordeon" data-accordion-item>
+						<div class="accordeon__trigger" data-accordion-trigger>Иные доходы{{ mixins.icon('arr-right') }}</div>
+						<div class="accordeon__container" data-accordion-container>
+							<ul class="navlist">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end accordeon -->
+				</div>
+				<div class="sidebar__item">
+					<div class="sidebar__item-wrap">
+						<a href="#" class="linkitem">
+							<span class="linkitem__icon">
+								{{ mixins.icon('calculator') }}
+							</span>
+							<span class="linkitem__title">Калькулятор <br>налогового вычета</span>
+						</a>
+						<a href="#" class="linkitem">
+							<span class="linkitem__icon">
+								{{ mixins.icon('message') }}
+							</span>
+							<span class="linkitem__title">Ответы на вопросы, напишите нам здесь</span>
+						</a>
+						<ul class="sidebar__soc soc">
+							<li><a href="#">{{ mixins.icon('vk') }}</a></li>
+							<li><a href="#">{{ mixins.icon('instagram') }}</a></li>
+							<li><a href="#">{{ mixins.icon('facebook') }}</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar__item">
+					<div class="advantages">
+						<div class="advantages__title">Преимущества</div>
+						<div class="advantages__description">оформления декларации у нас</div>
+						<ul class="advantages__list">
+							<li class="advantages__item">
+								<div class="advantages__icon"><img src="./img/aboutlisticon-1.png" alt="img"></div>
+								<div class="advantages__title-sm">Оформление от 1 часа</div>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__icon"><img src="./img/aboutlisticon-2.png" alt="img"></div>
+								<div class="advantages__title-sm">Минимум документов</div>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__icon"><img src="./img/aboutlisticon-3.png" alt="img"></div>
+								<div class="advantages__title-sm">Гарантия 100% сдачи</div>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__icon"><img src="./img/aboutlisticon-4.png" alt="img"></div>
+								<div class="advantages__title-sm">Работаем с 2013 года</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidebar__item">
+					<form action="#" class="form form_bord-none form_full">
+						<div class="form__title">Заказать оформление декларации 3-НДФЛ</div>
+						<div class="form__wrap">
+							<div class="form-group">
+								<div class="form-field">
+									<label class="checkbox">
+										<input type="checkbox" checked>
+										<span class="checkbox__text">Имущественный вычет</span>
+									</label>
+								</div>
+								<div class="form-field">
+									<label class="checkbox">
+										<input type="checkbox">
+										<span class="checkbox__text">Продажа авто / недвижимости</span>
+									</label>
+								</div>
+								<div class="form-field">
+									<label class="checkbox">
+										<input type="checkbox">
+										<span class="checkbox__text">Вычет на лечение</span>
+									</label>
+								</div>
+								<div class="form-field">
+									<label class="checkbox">
+										<input type="checkbox" checked>
+										<span class="checkbox__text">Вычет на обучение</span>
+									</label>
+								</div>
+								<div class="form-field">
+									<label class="checkbox">
+										<input type="checkbox" checked>
+										<span class="checkbox__text">Декларирование иных доходов</span>
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input"><input type="text" placeholder="* Ваш email"></div>
+							</div>
+							<div class="form-group">
+								<button class="btn btn_red btn_red-shad btn_full" type="submit">Отправить заявку</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</aside>
+			<!-- end sidebar -->
+			<!-- begin main -->
+			<main class="main">
+				<div class="main__wrap">
+					<article class="article">
+						<h2>Стоимость услуг</h2>
+						<p>Актуально от 1 января 2018 г.</p>
+						<div class="prices">
+							{% for item in [
+								{
+									title: "Предварительная консультация",
+									numb: "бесплатно",
+									text: "Анализ документов на наличие права на вычет, индивидуальный список документов в зависимости от Вашей ситуации"
+								},
+								{
+									title: "Имущественный вычет",
+									numb: "1000 ₽",
+									text: "Анализ Ваших документов, заполнение декларации 3-НДФЛ за 1 год, бесплатная консультация специалиста."
+								},
+								{
+									title: "Продажа имущества",
+									numb: "900 ₽",
+									text: "Заполнение декларации 3-НДФЛ при продаже недвижимости/автомобилей за 1 год, бесплатная консультация специалиста."
+								},
+								{
+									title: "Вычет на лечение",
+									numb: "600 ₽",
+									text: "Анализ Ваших документов, заполнение декларации 3-НДФЛ за 1 год, бесплатная консультация специалиста."
+								},
+								{
+									title: "Вычет на обучение",
+									numb: "600 ₽",
+									text: "Анализ Ваших документов, заполнение декларации 3-НДФЛ за 1 год, бесплатная консультация специалиста."
+								},
+								{
+									title: "Дополнительный источник дохода",
+									numb: "250 ₽",
+									text: "Если в течение 1 года было несколько <br>работодателей."
+								},
+								{
+									title: "Заявление",
+									numb: "50 ₽",
+									text: "Заявление о возврате НДФЛ (о получении вычета)."
+								},
+								{
+									title: "Скидки на заявления",
+									numb: "100 ₽",
+									text: "При единовременном заказе нескольких деклараций предоставляется скидка на 2 и 3 декларацию."
+								}
+							] %}
+							<div class="price">
+								<div class="price__head">
+									<div class="price__title">{{ item.title }}</div>
+									<div class="price__numb">{{ item.numb }}</div>
+								</div>
+								<div class="price__wrap">{{ item.text }}</div>
+							</div>
+							{% endfor %}
+						</div>
+						<h2>Способы оплаты</h2>
+						<div class="payments">
+							<div class="payment">
+								<div class="payment__icon">
+									<img src="./img/pay-1.png" alt="icon">
+								</div>
+								<div class="payment__wrap">
+									<div class="payment__title">Банковский перевод</div>
+									<p>Срок и комиссию за перевод можете уточнить в выбранном Вами банке, обычно от моментальной оплаты до 2-х суток.</p>
+								</div>
+							</div>
+							<div class="payment">
+								<div class="payment__icon">
+									<img src="./img/pay-2.png" alt="icon">
+								</div>
+								<div class="payment__wrap">
+									<div class="payment__title">Терминалы оплаты</div>
+									<p>Находятся во всех торговых магазинах, салонах сотовой связи. Срок пополнения - моментально.</p>
+								</div>
+							</div>
+							<div class="payment">
+								<div class="payment__icon">
+									<img src="./img/pay-3.png" alt="icon">
+								</div>
+								<div class="payment__wrap">
+									<div class="payment__title">Салоны сотовой связи</div>
+									<p>Срок пополнения - моментально.</p>
+								</div>
+							</div>
+						</div>
+						<div class="advantages advantages_mob">
+							<div class="advantages__title">Преимущества</div>
+							<div class="advantages__description">оформления декларации у нас</div>
+							<ul class="advantages__list">
+								<li class="advantages__item">
+									<div class="advantages__icon"><img src="./img/aboutlisticon-1.png" alt="img"></div>
+									<div class="advantages__title-sm">Оформление от 1 часа</div>
+								</li>
+								<li class="advantages__item">
+									<div class="advantages__icon"><img src="./img/aboutlisticon-2.png" alt="img"></div>
+									<div class="advantages__title-sm">Минимум документов</div>
+								</li>
+								<li class="advantages__item">
+									<div class="advantages__icon"><img src="./img/aboutlisticon-3.png" alt="img"></div>
+									<div class="advantages__title-sm">Гарантия 100% сдачи</div>
+								</li>
+								<li class="advantages__item">
+									<div class="advantages__icon"><img src="./img/aboutlisticon-4.png" alt="img"></div>
+									<div class="advantages__title-sm">Работаем с 2013 года</div>
+								</li>
+							</ul>
+						</div>
+						<form action="#" class="form form_mob form_full">
+							<div class="form__title">Заказать оформление <br>декларации 3-НДФЛ</div>
+							<div class="form__wrap">
+								<div class="form-group">
+									<div class="form-field">
+										<label class="checkbox">
+											<input type="checkbox" checked>
+											<span class="checkbox__text">Имущественный вычет</span>
+										</label>
+									</div>
+									<div class="form-field">
+										<label class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__text">Продажа авто / недвижимости</span>
+										</label>
+									</div>
+									<div class="form-field">
+										<label class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__text">Вычет на лечение</span>
+										</label>
+									</div>
+									<div class="form-field">
+										<label class="checkbox">
+											<input type="checkbox" checked>
+											<span class="checkbox__text">Вычет на обучение</span>
+										</label>
+									</div>
+									<div class="form-field">
+										<label class="checkbox">
+											<input type="checkbox" checked>
+											<span class="checkbox__text">Декларирование иных доходов</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input"><input type="text" placeholder="* Ваш email"></div>
+								</div>
+								<div class="form-group">
+									<button class="btn btn_red btn_red-shad btn_full" type="submit">Отправить заявку</button>
+								</div>
+							</div>
+						</form>
+						<h2>Политика конфиденциальности</h2>
+						<p>Все персональные данные хранятся зашифрованными и удаляются через 1 месяц после оформления декларации 3-НДФЛ. Мы не передаем информацию третьим лицам. По Вашему желанию, сохраняем данные для оформления на следующий год.</p>
+					</article>
+				</div>
+			</main>
+			<!-- end main -->
+		</div>
+	</div>
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

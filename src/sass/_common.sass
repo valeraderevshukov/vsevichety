@@ -1,4 +1,34 @@
-body
-	background: #FFF
-	line-height: 1.4
+html.is-overflow-hidden
+	overflow-y: scroll
 
+body
+	+fpn
+	+f(20px, 300, 1.35)
+	color: #363636
+	min-width: 500px
+	background: #FFF
+	+lg
+		+f(16px, 300, 1.30)
+	+sm
+		+f(20px, 300, 1.35)
+	.is-open-menu &,
+	.is-overflow-hidden &
+		width: 100%
+
+.title
+	position: relative
+	+f(48px,600,1.2)
+	+lg
+		font-size: 42px
+	+sm
+		font-size: 48px
+	&:before
+		position: absolute
+		content: ''
+		left: 0
+		top: 52px
+		height: 4px
+		width: 31px
+		background-color: #078b66
+		+lg
+			top: 50px

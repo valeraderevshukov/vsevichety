@@ -21,3 +21,107 @@
 // GENERATE GRID EXAMPLE
 // CUSTOM PADDING ON BREAKPOINTS - NOT INCLUDED IN MIXIN
 // +generate_grid($columns: 3, $sizeXs: false, $sizeSm: false, $sizeMd: false, $sizeLg: true, $padding: 30px)
++generate_grid()
+.out
+	position: relative
+	overflow: hidden
+.inner
+	margin: 0 auto
+	padding: 0 15px
+	max-width: 1216px // 1196px
+	+md
+		padding: 0 25px
+.wrap
+	display: flex
+	align-items: flex-start
+.sidebar
+	+fs(386px)
+	flex-shrink: 0
+	border-left: 1px solid #eee
+	border-right: 1px solid #eee
+	border-bottom: 1px solid #eee
+	background-color: #fdfefe
+	+lg
+		+fs(320px)
+	&__item
+		&:not(:last-child)
+			border-bottom: 1px solid #eee
+		.soc
+			margin-top: 50px
+			+lg
+				margin-top: 30px
+	&__item-wrap
+		padding: 48px 38px 60px
+		+lg
+			padding: 30px
+.main
+	flex-grow: 1
+	// overflow: hidden
+	&__wrap
+		padding: 44px 0 60px 48px
+		+lg
+			padding: 40px 0 50px 30px
+		+md
+			padding-left: 0
+		+sm
+			padding: 0 0 34px
+.section
+	position: relative
+	padding: 85px 0 116px
+	overflow: hidden
+	+lg
+		padding: 65px 0 96px
+	+sm
+		padding: 40px 0 55px
+	&_gray
+		background-color: #f8fafb
+	&__inner
+		position: relative
+		z-index: 1
+	&__img
+		position: absolute
+		top: -108px
+		left: -590px
+		max-width: 800px
+		z-index: -1
+		opacity: .3
+		img
+			max-width: 100%
+			display: block
+.head
+	margin-bottom: 60px
+	&:not(:last-child)
+		margin-bottom: 60px
+		+lg
+			margin-bottom: 45px
+	&:not(:first-child)
+		margin-top: 60px
+		+lg
+			margin-top: 45px
+.navlist
+	li
+		+f(18px,600,1.2)
+		+lg
+			font-size: 16px
+		&:not(:last-child)
+			margin-bottom: 20px
+		&.is-active,
+		&.active
+			a
+				color: #b03000
+	a
+		transition: color .3s
+		color: #333
+		+hover
+			color: #b03000
+		&.is-active,
+		&.active
+			color: #b03000
+
+.md-hide
+	+md
+		display: none !important
+.md-show
+	display: none !important
+	+md
+		display: block !important

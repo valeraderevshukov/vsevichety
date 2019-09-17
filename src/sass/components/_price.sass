@@ -1,0 +1,34 @@
+.prices
+	&:not(:last-child)
+		margin-bottom: 40px
+	&:not(:first-child)
+		margin-top: 40px
+.price
+	padding: 20px 24px 30px 20px
+	border-radius: 3px
+	border: 1px solid #e7e7e7
+	&:not(:last-child)
+		margin-bottom: 20px
+	&__head
+		padding: 0 0 20px 8px
+		align-items: center
+		display: flex
+		justify-content: space-between
+		+prevent-text
+		+sm
+			flex-direction: column
+			align-items: flex-start
+	&__title
+		margin-right: 10px
+		+f(24px,700,1.2)
+		color: #333
+		+lg
+			font-size: 20px
+	&__numb
+		color: #078b66
+		+f(40px,400,1.2)
+		+lg
+			font-size: 30px
+	&__wrap
+		padding: 27px 0 0 8px
+		border-top: 1px solid #e7e7e7

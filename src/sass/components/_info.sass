@@ -1,0 +1,46 @@
+.info
+	position: relative
+	vertical-align: middle
+	display: inline-block
+	.label &
+		margin-left: 8px
+	.icon-info
+		color: #cdcdcd
+		cursor: pointer
+		font-size: 21px
+	&__drop
+		position: absolute
+		top: 100%
+		left: 50%
+		color: #fff
+		margin-top: 22px
+		transform: translateX(-50%)
+		width: 683px
+		min-height: 60px
+		padding: 8px 50px 8px 8px
+		+f(20px,400,1.2)
+		border-radius: 3px
+		z-index: 1
+		background-color: #078b66
+		+fadeout(.3s)
+		+lg
+			width: 500px
+		&:before
+			position: absolute
+			content: ''
+			top: -12px
+			left: 50%
+			transform: translateX(-8px)
+			+arr(16,12,#078b66,t)
+		.info.is-open &
+			+fadein
+	&__close
+		position: absolute
+		top: 20px
+		right: 15px
+		font-size: 0
+		user-select: none
+		background-color: transparent
+		.icon
+			font-size: 20px
+			color: #fff

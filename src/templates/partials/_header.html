@@ -1,1 +1,167 @@
-<p>Hello from partials/_header.html</p>
+<!-- begin header -->
+<header class="header js-header">
+	<div class="header__top">
+		<div class="header__inner inner">
+			<a href="/" class="header__logo logo logo_mod">
+				<span class="logo__proc">
+					<img src="./img/logo-proc.png" alt="img">
+				</span>
+				<span class="logo__text">
+					<img src="./img/logo-text.png" alt="img">
+				</span>
+				<h1 class="logo__seo-text">Всевычеты.ру</h1>
+			</a>
+			<button class="btn-menu js-btn-menu" type="button">
+				<span class="btn-menu__line"></span>
+				<span class="btn-menu__line"></span>
+				<span class="btn-menu__line"></span>
+			</button>
+			<div class="header__time">
+				<p>заполняем декларацию 3-НДФЛ</p>
+				<p>8:00 – 20:00 без выходных</p>
+			</div>
+			<div class="header__consult">
+				<p>бесплатная консультация</p>
+				<p><a href="tel:8 (916) 747-17-30">8 (916) 747-17-30</a></p>
+			</div>
+			<div class="header__btn md-hide">
+				<a href="#" class="btn btn_sm" data-modal-control="ordermodal">заказать</a>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="header__inner inner js-header-bottom">
+			<div class="header__mob-topic md-show">
+				<div class="orderinf">
+					<div class="orderinf__text">
+						Заполнение <br>декларации 3-НДФЛ
+					</div>
+					<div class="orderinf__btns">
+						<a href="#" class="btn btn_middle" data-modal-control="ordermodal">заказать</a>
+					</div>
+				</div>
+				<form class="search search_full">
+					<div class="search__input"><input type="text" placeholder="Поиск"></div>
+					<button class="search__btn" type="submit">{{ mixins.icon('search') }}</button>
+				</form>
+			</div>
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+					<li class="nav__item is-active">
+						<a href="#">Налоговые вычеты</a>
+						<div class="accordeons md-show" data-accordion-group>
+							<!-- begin accordeon -->
+							<div class="accordeon" data-accordion-item>
+								<div class="accordeon__trigger" data-accordion-trigger>Имущественный вычет{{ mixins.icon('arr-right') }}</div>
+								<div class="accordeon__container" data-accordion-container>
+									<ul class="navlist">
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- end accordeon -->
+							<!-- begin accordeon -->
+							<div class="accordeon" data-accordion-item data-accordion-open>
+								<div class="accordeon__trigger" data-accordion-trigger>Вычет на лечение{{ mixins.icon('arr-right') }}</div>
+								<div class="accordeon__container" data-accordion-container>
+									<ul class="navlist">
+										<li class="is-active"><a href="#">Лечение родственников</a></li>
+										<li><a href="#">Дорогостоящее лечение</a></li>
+										<li><a href="#">Покупка медицинских материалов</a></li>
+										<li><a href="#">Список документов</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- end accordeon -->
+							<!-- begin accordeon -->
+							<div class="accordeon" data-accordion-item>
+								<div class="accordeon__trigger" data-accordion-trigger>Вычет на обучение{{ mixins.icon('arr-right') }}</div>
+								<div class="accordeon__container" data-accordion-container>
+									<ul class="navlist">
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- end accordeon -->
+							<!-- begin accordeon -->
+							<div class="accordeon" data-accordion-item>
+								<div class="accordeon__trigger" data-accordion-trigger>Декларация при продаже автомобиля{{ mixins.icon('arr-right') }}</div>
+								<div class="accordeon__container" data-accordion-container>
+									<ul class="navlist">
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- end accordeon -->
+							<!-- begin accordeon -->
+							<div class="accordeon" data-accordion-item>
+								<div class="accordeon__trigger" data-accordion-trigger>Декларация при продаже недвижимости{{ mixins.icon('arr-right') }}</div>
+								<div class="accordeon__container" data-accordion-container>
+									<ul class="navlist">
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- end accordeon -->
+							<!-- begin accordeon -->
+							<div class="accordeon" data-accordion-item>
+								<div class="accordeon__trigger" data-accordion-trigger>Иные доходы{{ mixins.icon('arr-right') }}</div>
+								<div class="accordeon__container" data-accordion-container>
+									<ul class="navlist">
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- end accordeon -->
+						</div>
+					</li>
+					<li class="nav__item"><a href="#">Услуги</a></li>
+					<li class="nav__item"><a href="#">Отзывы</a></li>
+					<li class="nav__item"><a href="#">Документы</a></li>
+					<li class="nav__item"><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__search md-hide">
+				<form class="search">
+					<div class="search__input"><input type="text" placeholder="Поиск"></div>
+					<button class="search__btn" type="submit">{{ mixins.icon('search') }}</button>
+				</form>
+			</div>
+			<div class="header__links md-show">
+				<a href="#" class="linkitem">
+					<span class="linkitem__icon">
+						{{ mixins.icon('calculator') }}
+					</span>
+					<span class="linkitem__title">Калькулятор <br>налогового вычета</span>
+				</a>
+				<a href="#" class="linkitem">
+					<span class="linkitem__icon">
+						{{ mixins.icon('message') }}
+					</span>
+					<span class="linkitem__title">Ответы на вопросы, <br>напишите нам здесь</span>
+				</a>
+				<ul class="sidebar__soc soc">
+					<li><a href="#">{{ mixins.icon('vk') }}</a></li>
+					<li><a href="#">{{ mixins.icon('instagram') }}</a></li>
+					<li><a href="#">{{ mixins.icon('facebook') }}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- end header -->

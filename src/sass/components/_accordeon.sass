@@ -1,0 +1,125 @@
+[data-accordion-item]
+[data-accordion-trigger]
+	cursor: pointer
+	user-select: none
+[data-accordion-container]
+	display: none
+
+.accordeon
+	+md
+		margin: -1px -25px 0
+		position: relative
+		&:after
+			position: absolute
+			content: ''
+			left: 25px
+			right: 25px
+			bottom: 0
+			height: 1px
+			background-color: #eee
+			transition: left .3s, right .3s
+			.accordeon.is-open &
+				left: 0
+				right: 0
+	&__trigger
+		position: relative
+		padding: 18px 50px 18px 43px
+		z-index: 1
+		+f(18px,600,1.38)
+		color: #333
+		transition: color .6s
+		+lg
+			font-size: 16px
+			padding: 18px 40px 18px 30px
+		+md
+			padding: 20px 60px 20px 50px
+		+hover
+			color: #ce3c06
+		.accordeon.is-open &
+			color: #ce3c06
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			z-index: -1
+			+fadeout(.6s)
+			background-image: linear-gradient( 90deg, rgb(250,243,236) 0%, rgb(254,233,212) 100%)
+			.accordeon.is-open &
+				+fadein()
+		.icon
+			position: absolute
+			top: 50%
+			right: 37px
+			margin-top: -6px
+			font-size: 12px
+			transition: transform .6s
+			+lg
+				right: 20px
+			+md
+				right: 37px
+			.accordeon.is-open &
+				+rotate(90)
+	&__container
+		padding: 20px 30px 20px 65px
+		background-color: rgb(250, 243, 235)
+		+lg
+			padding: 20px 20px 20px 40px
+		+md
+			padding: 20px 20px 20px 75px
+			border-bottom: 1px solid #eee
+
+.accordeonfaq-wrap
+	&:not(:last-child)
+		margin-bottom: 30px
+	&:not(:first-child)
+		margin-top: 34px
+.accordeonfaq
+	border-radius: 3px
+	background-color: #fff
+	border: 1px solid #e7e7e7
+	margin-bottom: -2px
+	&__trigger
+		position: relative
+		padding: 36px 60px 36px 42px
+		+f(24px,700,1.125)
+		+lg
+			padding: 30px 60px 30px 30px
+		+sm
+			padding: 36px 60px 36px 42px
+		.icon
+			position: absolute
+			top: 50%
+			right: 18px
+			margin-top: -7px
+			font-size: 14px
+			transition: transform .6s
+			.accordeonfaq.is-open &
+				+rotate(90)
+
+	&__item
+		padding: 40px 40px 34px 36px
+		border-top: 1px solid #e7e7e7
+		letter-spacing: -0.01em
+		+lg
+			padding: 30px
+		+sm
+			padding: 40px 40px 34px 36px
+			+prevent-text
+			text-align: justify
+		p
+			&:not(:last-child)
+				margin-bottom: 30px
+		a
+			color: #ce3c06
+			+f(18px,400,1.125)
+			border-bottom: 1px solid
+			transition: border-color .3s
+			+hover
+				border-color: transparent
+	&__answer-btn
+	&__footer
+		padding: 40px 36px
+		background-color: #f8fafb

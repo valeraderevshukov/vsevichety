@@ -1,0 +1,61 @@
+.order
+	position: relative
+	padding-bottom: 16px
+	overflow: hidden
+	color: #fff
+	&__wrap
+		display: flex
+		+md
+			flex-direction: column
+	&__out
+		padding-top: 64px
+		position: relative
+		border-radius: 8px 0 0 8px
+		background-color: #05936b
+		+md
+			border-radius: 0
+	&__form
+		margin-bottom: -16px
+		flex-shrink: 0
+		+md
+			margin: 0 -25px 
+		.form
+			+md
+				min-width: 100%
+				width: auto
+				border-radius: 0
+	&__content
+		position: relative
+		padding: 34px 0 0 140px
+		z-index: 1
+		+lg
+			padding: 34px 0 0 70px
+		+md
+			padding: 34px 0
+			order: -1
+		+sm
+			padding: 0 0 60px
+		&:before
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			content: '3-НДФЛ'
+			+f(856px,700,1)
+			white-space: nowrap
+			pointer-events: none
+			color: rgba(255, 255, 255, 0.102)
+	&__title
+		+f(36px,400,1.2)
+		margin-bottom: 95px
+		+md
+			margin-bottom: 54px
+			font-size: 34px
+	&__lenght
+		margin-left: -10px
+		margin-bottom: 20px
+		+f(45px,600,1.1)
+		text-transform: uppercase
+		+md
+			margin-bottom: 30px
+	&__description
+		+f(24px,400,1.1)

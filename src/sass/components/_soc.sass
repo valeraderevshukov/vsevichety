@@ -1,0 +1,29 @@
+.soc
+	flex-wrap: wrap
+	display: flex
+	&.sidebar__soc
+		li
+			&:not(:last-child)
+				margin-right: 56px
+	li
+		&:not(:last-child)
+			margin-right: 35px
+	a
+		width: 42px
+		height: 42px
+		text-align: center
+		font-size: 0
+		line-height: 40px
+		border-radius: 50%
+		color: #333
+		border: 1px solid rgb(231, 231, 231)
+		background-color: #fff
+		display: block
+		transition: color .3s
+		+hover
+			color: #b03000
+	.icon
+		font-size: 18px
+		line-height: 1
+		vertical-align: middle
+		display: inline-block

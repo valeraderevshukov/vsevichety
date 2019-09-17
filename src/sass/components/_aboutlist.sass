@@ -1,0 +1,44 @@
+.aboutlist
+	margin-bottom: 48px
+	margin-left: -10px
+	flex-wrap: wrap
+	display: flex
+	+sm
+		margin-left: 0
+		margin-bottom: 10px
+	&__item
+		display: flex
+		align-items: center
+		+f(18px,400,1.2)
+		+fs(25%)
+		+lg
+			font-size: 16px
+		+md
+			+fs(50%)
+			margin-bottom: 35px
+		+sm
+			font-size: 20px
+		&:not(:last-child)
+			padding-right: 15px
+
+	&__icon
+		flex-shrink: 0
+		height: 57px
+		width: 57px
+		+lg
+			width: 45px
+			height: 45px
+		+sm
+			height: 57px
+			width: 57px
+		img
+			max-height: 100%
+			max-width: 100%
+			display: block
+	&__title
+		padding-left: 15px
+		flex-grow: 1
+		+lg
+			padding-left: 10px
+		+sm
+			padding-left: 18px

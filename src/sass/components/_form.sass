@@ -25,6 +25,10 @@
 			font-size: 20px
 		+sm
 			font-size: 26px
+		[data-modal-container] &
+			+sm
+				padding-right: 50px
+				padding-left: 50px
 	&__wrap
 		padding: 20px 30px 40px
 		+md
@@ -178,3 +182,14 @@
 			margin-bottom: 28px
 		+sm
 			+fs(100%)
+
+.error-block
+	margin-top: 28px
+	padding: 12px 25px
+	color: #b03000
+	+f(20px, 400, 1.2)
+	border-radius: 5px
+	background-color: rgb(248, 215, 218)
+	p
+		&:not(:last-child)
+			margin-bottom: 16px

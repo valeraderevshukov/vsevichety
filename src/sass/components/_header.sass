@@ -29,7 +29,7 @@
 	&__time
 		margin-right: 15px
 		+fs(28%)
-		letter-spacing: -.05em
+		font-size: 18px
 		+md
 			margin-top: 34px
 			padding-left: 87px
@@ -38,7 +38,7 @@
 	&__consult
 		margin-right: 15px
 		+fs(22%)
-		letter-spacing: -.05em
+		font-size: 18px
 		+md
 			padding-left: 87px
 			+fs(100%)
@@ -47,7 +47,6 @@
 			color: #b03000
 			font-size: 20px
 			transition: border-color .3s
-			letter-spacing: normal
 			border-bottom: 1px solid transparent
 			+md
 				font-size: 33px
@@ -147,8 +146,7 @@
 		& > a
 			padding: 32px 12px 24px 0
 			color: #000
-			transition: color .3s
-			letter-spacing: 0.021em
+			transition: color .3s, border-color .3s
 			border-bottom: 4px solid transparent
 			display: block
 			+md
@@ -156,6 +154,9 @@
 				border-bottom: 1px solid #e7e7e7
 			+hover
 				color: #b03000
+				border-color: #b03000
+				&:active
+					border-color: transparent
 			&.is-active,
 			&.active
 				color: #b03000
@@ -193,9 +194,6 @@
 			display: block
 			&::placeholder
 				color: #777
-			&:focus
-				&::placeholder
-					font-size: 0
 			.search_full &
 				height: 60px
 				padding: 0 60px 0 23px
